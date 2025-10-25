@@ -1,0 +1,306 @@
+\documentclass[11pt,ngerman]{scrartcl}
+
+% ====== Pakete ======
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+% ====== Platzhalter ======
+\newcommand{\versuchstitel}{EME 13 – Gleichstromkreise mit Leistungsanpassung}
+\newcommand{\veranstaltung}{Interdisziplinäres Praktikum Mathe/GET}
+\newcommand{\autor}{Florian Rotunno}
+\newcommand{\matnr}{28158}
+\newcommand{\gruppe}{1.1A / 23.10.2025}
+\newcommand{\datum}{<Abgabedatum>}
+
+% ====== Dokument ======
+\begin{document}
+
+% ====== Deckblatt ======
+\begin{titlepage}
+\centering
+{\Large Hochschule Düsseldorf – Fachbereich EI\\[0.5ex]}
+{\large \veranstaltung\\[4ex]}
+{\huge\bfseries \versuchstitel\\[2ex]}
+\vfill
+\begin{tabular}{@{}ll@{}}
+Autor: & \autor\\
+Matrikelnummer: & \matnr\\
+Gruppe/Labor: & \gruppe\\
+Datum: & \datum\\
+\end{tabular}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+
+
+% ====== Hinweis zur Struktur ======
+% Du kannst diesen Text als Vorlage für jede Aufgabe nutzen.
+% Beispiel: Jede Aufgabe hat die Abschnitte "Ziel", "Rechnung", "Ergebnis" und "Bemerkung".
+
+% Beispielvorlage:
+%
+% \textbf{Ziel:} Kurze Beschreibung, was in dieser Aufgabe untersucht wird.
+%
+% \textbf{Rechnung:}
+% \begin{align*}
+% R &= \frac{U}{I} = \frac{12\,\mathrm{V}}{0.036\,\mathrm{A}} = 333.3\,\Omega
+% \end{align*}
+%
+% \textbf{Ergebnis:} Der Widerstand beträgt also ca.\ $R = 333\,\Omega$.
+%
+% \textbf{Bemerkung:} Das Ergebnis stimmt gut mit dem theoretischen Wert überein.
+
+% ====== Aufgaben ======
+\section{Ausarbeitung}
+
+\subsection{G12 – Einfacher Widerstand}
+In diesem Abschnitt wird der Zusammenhang zwischen Spannung, Strom und Widerstand an einem einfachen Widerstand untersucht. Ziel ist es, den Widerstandswert $R$ sowie die Leistung $P$ zu berechnen, die im Widerstand umgesetzt wird. Dazu werden die grundlegenden Formeln der Elektrotechnik angewendet, die den Zusammenhang zwischen Spannung $U$, Strom $I$ und Widerstand $R$ beschreiben. 
+
+Die Widerstände werden dabei mit der Formel
+\[
+R = \frac{U}{I}
+\]
+bestimmt, was dem ohmschen Gesetz entspricht. Die Leistung, die im Widerstand umgesetzt wird, berechnet sich aus dem Produkt von Spannung und Strom:
+\[
+P = U \cdot I
+\]
+
+\textbf{Beispielrechnung:} Für die gegebenen Messwerte $U = 9\,\mathrm{V}$ und $I = 27\,\mathrm{mA}$ lässt sich der Widerstand sowie die Leistung wie folgt berechnen:
+\begin{align*}
+R &= \frac{9\,\mathrm{V}}{27\,\mathrm{mA}} = 333{,}33\,\Omega, \\
+P &= 9\,\mathrm{V} \cdot 27\,\mathrm{mA} = 243\,\mathrm{mW}
+\end{align*}
+Das Ergebnis zeigt, dass der Widerstand bei diesen Messwerten etwa $333\,\Omega$ beträgt und eine Leistung von rund $243\,\mathrm{mW}$ umgesetzt wird. Diese Werte sind wichtig, um das Verhalten des Widerstands im Stromkreis besser einschätzen zu können.
+
+\vspace{1cm}
+
+\subsection{G14 – Parallelschaltung}
+
+In diesem Abschnitt wird das Verhalten von Widerständen in einer Parallelschaltung betrachtet. Es wird erläutert, dass in einer Parallelschaltung an allen Widerständen dieselbe Spannung anliegt, während sich der Gesamtstrom auf die einzelnen Zweige aufteilt. Diese Verteilung des Stroms wird durch den Knotensatz beschrieben, der besagt, dass der Gesamtstrom die Summe der Teilströme ist:
+\[
+I_{\mathrm{ges}} = I_1 + I_2
+\]
+
+\textbf{Beispielrechnung 1 für $9\,\mathrm{V}$:}  
+Anhand der gemessenen Ströme $I_1 = 40{,}7\,\mathrm{mA}$ und $I_2 = 18{,}7\,\mathrm{mA}$ wird der Gesamtstrom berechnet:
+\begin{align*}
+I_{\mathrm{ges}} &= I_1 + I_2 \\
+&= 40{,}7\,\mathrm{mA} + 18{,}7\,\mathrm{mA} \\
+&= 59{,}4\,\mathrm{mA}
+\end{align*}
+
+\textbf{Beispielrechnung 2 für $10\,\mathrm{V}$:}  
+Für eine höhere Spannung von $10\,\mathrm{V}$ ergeben sich entsprechend höhere Teilströme:
+\begin{align*}
+I_{\mathrm{ges}} &= I_1 + I_2 \\
+&= 45{,}3\,\mathrm{mA} + 20{,}9\,\mathrm{mA} \\
+&= 66{,}2\,\mathrm{mA}
+\end{align*}
+
+\textbf{Ergebnis:}  
+Die berechneten Gesamtströme bestätigen, dass sich in einer Parallelschaltung die Ströme der einzelnen Zweige addieren. Dies entspricht dem theoretischen Verhalten und zeigt, dass der Gesamtstrom immer größer ist als jeder einzelne Teilstrom.
+
+\vspace{1cm}
+
+\subsection{G15 – Parallelschaltung}
+In dieser Aufgabe wird untersucht, wie sich die einzelnen Teilströme zum Gesamtstrom verhalten. Dazu werden die Quotienten der Teilströme zum Gesamtstrom gebildet:
+\[
+\frac{I_1}{I_{\mathrm{ges}}} \quad \text{und} \quad \frac{I_2}{I_{\mathrm{ges}}}
+\]
+
+\textbf{Beispiel für $9\,\mathrm{V}$:}  
+Mit den gemessenen Strömen $I_1 = 40{,}7\,\mathrm{mA}$ und $I_2 = 18{,}7\,\mathrm{mA}$ sowie dem Gesamtstrom $I_{\mathrm{ges}} = 59{,}4\,\mathrm{mA}$ ergibt sich folgendes Verhältnis:
+\begin{align*}
+\frac{I_2}{I_{\mathrm{ges}}} &= \frac{18{,}7\,\mathrm{mA}}{59{,}4\,\mathrm{mA}} = 0{,}315 = 31{,}5\%, \\
+\frac{I_1}{I_{\mathrm{ges}}} &= \frac{40{,}7\,\mathrm{mA}}{59{,}4\,\mathrm{mA}} = 0{,}685 = 68{,}5\%
+\end{align*}
+Diese Werte zeigen, dass der erste Zweig etwa zwei Drittel des Gesamtstroms trägt, während der zweite Zweig etwa ein Drittel beiträgt. Das entspricht typischen Verteilungen in Parallelschaltungen mit unterschiedlichen Widerstandswerten.
+
+\vspace{1cm}
+
+\subsection{G17 – Herleitung}
+In diesem Abschnitt wird die Herleitung der Stromverhältnisse in einer Parallelschaltung mit zwei Widerständen dargestellt. Ziel ist es, die Ströme in den einzelnen Zweigen anhand der bekannten Widerstände und der Gesamtstromstärke zu berechnen.
+
+Gegeben sind die Formeln für den Gesamtwiderstand einer Parallelschaltung:
+\[
+R_{\mathrm{ges}} = \frac{R_1 R_2}{R_1 + R_2}
+\]
+und für den Strom in einem Zweig:
+\[
+I_n = \frac{U}{R_n}. \tag{1}
+\]
+
+\textbf{Herleitung:}  
+Ausgehend vom Knotensatz und den Ohmschen Gesetzen gilt:
+\begin{align*}
+I_{\mathrm{ges}} &= I_n + I_m, \\[6pt]
+I_{\mathrm{ges}} &= U \left(\frac{1}{R_n} + \frac{1}{R_m}\right) \implies U = I_{\mathrm{ges}} \frac{R_n R_m}{R_n + R_m}, \tag{2} \\[6pt]
+I_n &= \frac{U}{R_n} \overset{(2)}{=} I_{\mathrm{ges}} \frac{R_n R_m}{R_n + R_m} \cdot \frac{1}{R_n} = I_{\mathrm{ges}} \frac{R_m}{R_n + R_m}
+\end{align*}
+
+\textbf{Bemerkung:}  
+Diese Herleitung zeigt, dass sich der Strom in einem Zweig der Parallelschaltung proportional zum Widerstand des anderen Zweigs verhält.
+
+\subsection{G18 – Berechnungen}
+In dieser Aufgabe werden die Leitwerte sowie der Gesamtwiderstand einer Parallelschaltung berechnet. Gegeben sind die Spannung $U = 9\,\mathrm{V}$ und die gemessenen Ströme $I_1$ und $I_2$.
+
+
+\[
+G_n = \frac{1}{R_n}
+\]
+Für mehrere Widerstände in Parallelschaltung gilt:
+\[
+G_{\mathrm{ges}} = \sum_{i=1}^n G_i,
+\]
+während der Gesamtwiderstand berechnet wird als:
+\[
+R_{\mathrm{ges}} = \frac{R_n R_m}{R_n + R_m}
+\]
+
+\textbf{Berechnung:}
+\begin{align*}
+G_1 &= \frac{I_1}{U} = \frac{40{,}7\,\mathrm{mA}}{9\,\mathrm{V}} = 4{,}5\,\mathrm{mS}, \\[6pt]
+G_2 &= \frac{I_2}{U} = \frac{18{,}7\,\mathrm{mA}}{9\,\mathrm{V}} = 2{,}1\,\mathrm{mS}, \\[6pt]
+G_{\mathrm{ges}} &= \frac{I_{\mathrm{ges}}}{U} = \frac{59{,}4\,\mathrm{mA}}{9\,\mathrm{V}} = 6{,}6\,\mathrm{mS}, \\[6pt]
+R_{\mathrm{ges}} &= \frac{U}{I_{\mathrm{ges}}} = \frac{9\,\mathrm{V}}{59{,}4\,\mathrm{mA}} = 151{,}5\,\Omega
+\end{align*}
+
+\clearpage
+
+\subsection{G19 – Berechnungen Reihenschaltung}
+Hier wird das Verhalten von Widerständen in einer Reihenschaltung betrachtet. Im Gegensatz zur Parallelschaltung teilt sich hier die Gesamtspannung auf die einzelnen Widerstände auf, während der Strom durch alle Widerstände gleich bleibt.
+
+\textbf{Beispiel:}  
+Die Spannungsverhältnisse werden durch Quotienten der Teilspannungen zur Gesamtspannung dargestellt:
+\begin{align*}
+\frac{U_0}{U_{\mathrm{ges}}} &= \frac{2{,}4\,\mathrm{V}}{4\,\mathrm{V}} = 0{,}6 = 60\%, \\[6pt]
+\frac{U_1}{U_{\mathrm{ges}}} &= \frac{1{,}6\,\mathrm{V}}{4\,\mathrm{V}} = 0{,}4 = 40\%.
+\end{align*}
+
+Diese Werte zeigen, dass die Spannung sich aufteilen, was für eine Reihenschaltung spricht.
+\subsection{G21 – Herleitung Spannungsteiler}
+In diesem Abschnitt wird die Herleitung des Spannungsteilers erklärt. Da in einer Reihenschaltung der Strom überall gleich ist, lassen sich die Spannungen an den einzelnen Widerständen durch den Strom und deren Widerstandswerte berechnen.
+
+Es gilt:
+\begin{align*}
+I &= \frac{U}{R_1 + R_0}, \\[6pt]
+U_1 &= I \cdot R_1, \quad U_0 = I \cdot R_0, \\[6pt]
+\Rightarrow \quad \frac{U_1}{U} &= \frac{R_1}{R_1 + R_0}, \\[6pt]
+\frac{U_0}{U} &= \frac{R_0}{R_0 + R_1}
+\end{align*}
+
+\subsection{G22 – Berechnungen}
+Um die Leitwerte und Widerstände zu bestimmen, geht man von einer Quellspannung von 9V aus. $R_0$ und $R_1$ werden mit folgenden Formeln bestimmt:
+\begin{align*}
+R_1 &= \frac{3{,}6\,\mathrm{V}}{16{,}3\,\mathrm{mA}} = 220{,}9\,\Omega, \quad R_0 = \frac{5{,}38\,\mathrm{V}}{16{,}3\,\mathrm{mA}} = 330\,\Omega.
+\end{align*}
+
+Zusätzlich werden die Leitwerte berechnet, die den Kehrwert der Widerstände darstellen und die Leitfähigkeit beschreiben:
+\begin{align*}
+G_1 &= \frac{I}{U_1} = I \cdot \frac{R_0 + R_1}{R_1 \cdot U} = 16{,}3\,\mathrm{mA} \cdot \frac{330\,\Omega + 220{,}9\,\Omega}{220{,}9\,\Omega \cdot 9\,\mathrm{V}} = 0{,}00452\,\mathrm{S} = 4{,}5\,\mathrm{mS}, \\[6pt]
+G_2 &= \frac{I}{U_0} = I \cdot \frac{R_0 + R_1}{R_0 \cdot U} = 16{,}3\,\mathrm{mA} \cdot \frac{330\,\Omega + 220{,}9\,\Omega}{330\,\Omega \cdot 9\,\mathrm{V}} = 0{,}00303\,\mathrm{S} = 3{,}03\,\mathrm{mS}, \\[6pt]
+G_{\mathrm{ges}} &= \frac{I}{U_0 + U_1} = \frac{16{,}3\,\mathrm{mA}}{9\,\mathrm{V}} = 0{,}0018\,\mathrm{S} = 1{,}8\,\mathrm{mS}, \\[6pt]
+R_{\mathrm{ges}} &= \frac{U_0 + U_1}{I} = \frac{9\,\mathrm{V}}{16{,}3\,\mathrm{mA}} = 552{,}15\,\Omega
+\end{align*}
+
+
+\clearpage
+
+\subsection{G23 – Berechnung von $P_0$, $P_x$, $P_{\mathrm{ges}}$, $R_0$ und Verhältnissen}
+In diesem Abschnitt werden verschiedene Leistungsgrößen und Widerstände berechnet, die aus den Messungen abgeleitet werden können. Dabei werden die Leistungen an den einzelnen Widerständen und die Gesamtleistung betrachtet sowie Verhältnisse und Wirkungsgrade ermittelt.
+
+Die relevanten Formeln lauten:
+\begin{align*}
+P_0 &= R_0 \cdot I^2, \quad P_x = R_x \cdot I^2, \quad P_{\mathrm{ges}} = I \cdot U, \\[6pt]
+R_0 &= \frac{U}{I} - R_x, \\[6pt]
+X &= \frac{R_x}{R_0}, \quad \eta_{p_0} = \frac{P_0}{P}, \quad \eta_{p_x} = \frac{P_x}{P}
+\end{align*}
+
+\textbf{Beispielrechnung für $R_x = 630\,\Omega$:}  
+Der Wert für $R_0$ wird aus der Messung entnommen und beträgt hier $345{,}61\,\Omega$. Die Berechnungen basieren auf dem Spannungsteilerprinzip und der Maschengleichung $U - U_0 - U_x = 0$, wobei der Strom und der Widerstand $R_x$ bekannt sind.
+
+Die Leistungen und Verhältnisse werden wie folgt berechnet:
+\begin{align*}
+P_0 &= R_0 \cdot I^2 = 345{,}16\,\Omega \cdot (12{,}3\,\mathrm{mA})^2 = 0{,}05228\,\mathrm{W} = 52{,}3\,\mathrm{mW}, \\[6pt]
+P_x &= R_x \cdot I^2 = 630\,\Omega \cdot (12{,}3\,\mathrm{mA})^2 = 0{,}0953\,\mathrm{W} = 95{,}3\,\mathrm{mW}, \\[6pt]
+P &= P_x + P_0 = 52{,}3\,\mathrm{mW} + 95{,}3\,\mathrm{mW} = 147{,}6\,\mathrm{mW}, \\[6pt]
+X &= \frac{R_x}{R_0} = \frac{630\,\Omega}{345{,}16\,\Omega} = 1{,}822 = 182\%, \\[6pt]
+\eta_{p_0} &= \frac{P_0}{P} = \frac{52{,}3\,\mathrm{mW}}{147{,}6\,\mathrm{mW}} = 0{,}354 = 35{,}3\%, \\[6pt]
+\eta_{p_x} &= \frac{P_x}{P} = \frac{95{,}3\,\mathrm{mW}}{147{,}6\,\mathrm{mW}} = 0{,}646 = 64{,}6\%
+\end{align*}
+
+
+\clearpage
+
+\subsection{G25 – toller Satz}
+bla bla bla
+
+\subsection{M26 – Leistungsanpassung}
+
+Gegeben: Quelle $U_{\mathrm{ges}}$ mit Innenwiderstand $R_0$, Last $R_x = x R_0$. Um die maximale Leistung zu berechnen, reicht es die funktion abzuleiten, an dem Punkt wo die Steigung gleich Null ist, befindet sich das Maximum.
+
+\textbf{Strom, Leistung und Wirkungsgrad:}
+\[
+I = \frac{U_{\mathrm{ges}}}{R_0 (1 + x)}, \quad
+P = I^2 R_x = \frac{U_{\mathrm{ges}}^2}{R_0} \frac{x}{(1 + x)^2}, \quad
+\eta(x) = \frac{P}{P_{\mathrm{ges}}} = \frac{x}{1 + x}
+\]
+
+\textbf{Bestimmung des Maximums von $P$ über $f(x)=\dfrac{x}{(1+x)^2}$:}\\
+Wir schreiben \(f(x)=x\,(1+x)^{-2}\). Dann
+\[
+\begin{aligned}
+f'(x)&=\frac{d}{dx}\big[x\,(1+x)^{-2}\big] \\
+&= 1\cdot(1+x)^{-2} + x\cdot(-2)\,(1+x)^{-3}\cdot 1 \\
+&= \frac{1}{(1+x)^2} - \frac{2x}{(1+x)^3}
+= \frac{(1+x) - 2x}{(1+x)^3}
+= \frac{1-x}{(1+x)^3}
+\end{aligned}
+\]
+
+\[
+1-x=0 \;\Rightarrow\; x=1
+\]
+
+
+\textbf{Ergebnis:}
+\[
+R_x = R_0, \quad
+P_{\max} = \frac{U_{\mathrm{ges}}^2}{4 R_0}, \quad
+\eta(1) = \frac{1}{2} = 50\%
+\]
+
+
+Bei $R_x = R_0$ halbiert sich die Klemmenspannung.  
+Beide Widerstände setzen dieselbe Leistung um, daher ist die übertragene Leistung maximal,  
+der Wirkungsgrad jedoch  $50\%$.\\
+\\
+\textbf{b) Möglichst gro\ss er Wirkungsgrad}\\
+Aus \(P(x)=\dfrac{U_{\mathrm{ges}}^2}{R_0}\,\dfrac{x}{(1+x)^2}\) und \(P_{\max}=\dfrac{U_{\mathrm{ges}}^2}{4R_0}\) sowie \(P=\tfrac{8}{9}P_{\max}\)
+\[
+\frac{U_{\mathrm{ges}}^2}{R_0}\,\frac{x}{(1+x)^2}=\frac{8}{9}\,\frac{U_{\mathrm{ges}}^2}{4R_0}
+\]
+Gemeinsamen Faktor kürzen
+\[
+\frac{x}{(1+x)^2}=\frac{2}{9}
+\]
+Wenn man jetzt genau hinschaut, ergibt sich für x = 2
+\[
+\frac{2}{(1+2)^2}=\frac{2}{9}
+\]
+
+Wirkungsgrad \(\eta(x)=\dfrac{x}{1+x}\)
+\[
+\eta(2)=\tfrac{2}{3}
+\]
+\textbf{Ergebnis:} Für \(\tfrac{8}{9}P_{\max}\) und maximalen Wirkungsgrad wählt man \(x=2\), also \(R_x=2R_0\), dann ergibt sich ein Wirkungsgrad von \(\eta=\tfrac{2}{3}=66{,}7\%\)
+
+
+\end{document}
