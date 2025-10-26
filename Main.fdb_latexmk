@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761434710 "/Users/imagine_losing/Desktop/LatexOR/Main.tex" "Main.pdf" "Main" 1761434710 0
-  "/Users/imagine_losing/Desktop/LatexOR/Main.tex" 1761434709 13305 4d31040b0770c0e49798a32a26c1f095 ""
+["pdflatex"] 1761482312 "/Users/imagine_losing/Desktop/LatexOR/Main.tex" "Main.pdf" "Main" 1761482312 0
+  "/Users/imagine_losing/Desktop/LatexOR/Main.tex" 1761482311 13868 5911656a9f1c69d924c72673a8f11cf5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -99,9 +99,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1695849585 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1695849477 7883453 03ae18feaebe0f878445c79df538b335 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Main.aux" 1761434710 1834 af14f294c1056ee5ed7c52c05aa05f78 "pdflatex"
-  "Main.tex" 1761434709 13305 4d31040b0770c0e49798a32a26c1f095 ""
-  "Main.toc" 1761434710 1061 3c32d53ce7da3c0ee94d50519e218464 "pdflatex"
+  "Main.aux" 1761482312 1838 b1a7bb08abfdc7ea5dfb878d1e67a062 "pdflatex"
+  "Main.tex" 1761482311 13868 5911656a9f1c69d924c72673a8f11cf5 ""
+  "Main.toc" 1761482312 1065 cc5507e6705ebee5250843f08d998919 "pdflatex"
   (generated)
   "Main.aux"
   "Main.log"
